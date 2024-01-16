@@ -1,0 +1,777 @@
+
+
+
+*{
+    transition: 200ms;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+text-decoration: none;
+}
+
+.active{
+    text-decoration: dotted;
+}
+
+html{
+    scroll-behavior:smooth ;
+    transition: 500ms;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f6f6f6f6;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 112, 112);
+    border-radius: 5px;
+}
+
+
+/*background*/
+body {
+    background-image: url(../img/new.jpg);
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.text {
+    margin-top: 220px;
+    margin-left: 90px;
+}
+
+
+
+.smile{
+    margin-left: -70px;
+    font-size: 36px;
+    filter: drop-shadow(1px 2px 1px #000000);
+    animation: 4s sml infinite alternate;
+}
+
+@keyframes sml {
+
+    from{color: rgb(0, 0, 0)}
+    to{color: aqua;     filter: drop-shadow(1px 2px 1px #000000);
+
+}
+
+}
+
+
+.text2 {
+    border-width: 15px;
+    border-color: aqua;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: aqua;
+    width: 20%;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-left: -70px;
+}
+
+.text2:hover{
+    background-color: gray;
+    border-color: gray;
+    padding-right: 20px;
+
+}    
+
+.text2:active{
+
+    padding-left: 20px;
+
+}    
+
+
+
+
+
+/*navbar*/
+
+
+#toggleIcon{
+    color: rgb(0, 103, 103);
+    font-size: 1.5rem;
+    cursor: pointer; 
+    display: none;
+  margin-left: 30px;
+}
+
+header div nav {
+height: 80px;
+
+}
+
+.navFixed{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(189, 189, 189);
+}
+
+.care{
+    color: rgb(0, 255, 255);
+        font-size: 36px;
+        font-weight: 500;
+        filter: drop-shadow(1px 1px 1px #000000);
+
+}
+
+#appoint{
+    background-color: aqua;
+    margin-left: 100px;
+    font-size: 18px;
+}
+#appoint:hover{
+    background-color: gray;
+    margin-left: 100px;
+
+}
+
+
+
+
+#ll{
+        box-shadow: 0px 0px 10px 0px  #000;
+}
+
+header nav ul{
+    margin-left: 180px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+
+header nav ul li a{
+        font-size: 22px;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+}
+
+
+header nav ul li a:hover{
+    font-size: 24px;
+    color: aqua;
+    filter: drop-shadow(1px 2px 1px #000000);
+
+}    
+
+
+
+
+#name{
+    font-size: 38px;
+    font-weight: 600;
+    color: white;
+    filter: drop-shadow(1px 2px 1px #000000);
+}
+
+
+
+
+header{ 
+height: 50px;
+}
+
+
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    filter: drop-shadow(1px 2px 1px #000000);
+
+}
+
+
+.dropdown_menu ul li a{
+    color: white;
+}
+
+
+
+.dropdown_menu{
+    display: none;
+    text-align: center;
+    background:gray;    
+width:35%;
+position: absolute;
+top: 85px;
+border-radius: 20px;
+right: 10px;
+overflow: hidden;
+opacity: 90%;
+height: 0;
+position: fixed;
+z-index: 1;
+}
+
+.dropdown_menu.open{
+    height: 235px;
+}
+
+.dropdown_menu li{
+font-weight: 500;
+}
+
+
+
+.dropdown_menu li a:hover{
+background-color: rgb(0, 155, 155);
+}
+
+
+.dropdown_menu li a:active{
+ background-color: rgb(0, 155, 155);
+}
+
+
+
+.dropdown_menu ul #appoint{
+font-size: 14px;
+border-radius: 10px;
+margin: auto;
+background-color: rgb(0, 169, 161);
+width: 100%;
+
+}
+
+
+
+.dropdown_menu ul #appoint:hover{
+color: #fff;
+background-color: rgb(103, 103, 103);
+
+}
+
+/*responsive*/
+
+
+
+
+
+
+
+@media screen and  (min-width:600px) and (max-width:992px) {
+
+    #x{
+        display: none;
+    }
+    
+    #toggleIcon{
+            display: block;
+        }
+    
+    .dropdown_menu{
+        display: block;
+    }
+    
+    
+
+    .smile{
+    font-size:40px;
+text-align: center;  
+margin-top: -100px;
+}
+
+.text pre {
+    text-align: center;
+    font-size: 14px;
+   margin-top: 50px;
+font-weight: 800;
+}
+
+.text2 {
+    width: 50%;
+    margin: 170px;
+margin-top: 20px;
+}
+
+#About .about{
+ 
+    display: flex;
+    justify-content: center;
+    color: rgba(77, 77, 77, 0.275);
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: -3px;
+    position: relative;
+    top: -20px;
+    right: 300px;
+   
+}
+
+#About .aboutPhoto{
+    margin-left: 5px;
+    position: absolute;
+    top: 800px;
+    width: 40%;
+
+}
+#About .PREabout{
+margin-right: -150px;
+margin-top: -280px;
+}
+#About .Pabout{
+    font-size: 14px;
+    margin-top: -330px;
+    margin-right: 65px;
+}
+
+section #appointAbout{
+    width: 550px ;
+margin-right: -520px;
+margin-top: -200px;
+}
+    
+#About{
+    margin-bottom: -450px;
+}
+
+
+}
+
+@media screen and (max-width:600px) {
+    #x{
+        display: none;
+    }
+    
+    #toggleIcon{
+            display: block;
+        }
+    
+    .dropdown_menu{
+        display: block;
+    }
+    
+    
+
+    section .smile{
+    font-size: 24px;
+text-align: center;  
+margin-top: -130px;
+}
+
+.smilePre  {
+    display: none;
+}
+
+.text2 {
+    width: 40%;
+    text-align: center; 
+margin-top: 20px;
+margin-left: 20%;
+font-size: 14px;
+border-width: 7px;
+}
+
+#About .about{
+ 
+    display: flex;
+    justify-content: center;
+    color: rgba(77, 77, 77, 0.275);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: -3px;
+    position: relative;
+    top: 50px;
+    right: 350px;
+    
+}
+#About .about span{
+ 
+    display: none;
+    
+}
+
+#About .aboutPhoto{
+    margin-left: 3px;
+    position: absolute;
+    top: 400px;
+    width: 30%;
+    height: 20%;
+}
+
+
+
+#About .PREabout{
+margin-right: -120px;
+margin-top: -700px;
+font-size: 12px;
+
+}
+
+
+
+#About .Pabout{
+display: none;
+}
+
+section #appointAbout{
+    width: 250px ;
+margin-right: -470px;
+margin-top: -750px;
+}
+    
+#About{
+    margin-bottom: -530px;
+}
+
+
+
+section .title2 {
+font-size: 60px;
+}
+
+#Services h3{
+    font-size: 50px;
+   
+}
+
+#bookingToAppointment .appointment{
+    width: 100%;
+    margin: 30px 2px 10px 5px;
+ 
+    }
+    
+}
+
+/*section*/
+
+
+
+.about {
+    font-size: 30px;
+    color: rgb(0, 174, 174);
+    margin-left: 600px;
+    position: absolute;
+    top: 1000px;
+    margin-top: 5px;
+}
+
+.aboutPhoto {
+    width: 35%;
+    height: 40%;
+    margin-left: 70px;
+    position: absolute;
+    top: 1000px;
+    border-radius: 5px;
+
+}
+
+.Pabout{
+    position: absolute;
+    top: 1050px;
+    right: 330px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+}
+
+.PREabout{
+    position: absolute;
+    top: 1100px;
+    right: 180px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+
+}
+#appointAbout{
+background-color: aqua;
+position: absolute;
+top: 1220px;
+right: 535px;
+transition: 200ms;
+}
+
+
+#appointAbout:hover{
+    background-color: gray;
+    border-color: gray;
+    padding-right: 20px;
+
+}
+
+/*services*/
+
+.cards{
+    padding-top: 30px;
+}
+
+#Services h3{
+    color: rgb(0, 98, 98);
+   
+}
+
+
+@keyframes servicesH3{
+
+    from{border: 2px solid aqua}
+    to{border:  solid rgb(0, 92, 92);}
+
+
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgba(77, 77, 77, 0.275);
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: -3px;
+}
+
+
+
+.title2 {
+    display: flex;
+    justify-content: center;
+    color: rgba(77, 77, 77, 0.275);
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: -3px;
+    margin-top: -130px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.card2 {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 2px 4px rgba(1 1 1 / 15%);
+    border-radius: 100px;
+    padding: 25px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.card2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+
+    animation: .8s servicesH3 infinite alternate;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    animation: .8s servicesH3 infinite alternate;
+
+}
+
+.icon {
+    color: rgb(0, 174, 174);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color:rgb(0, 98, 98);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px;
+margin-bottom: 40px;
+} 
+
+.appointment{
+width: 40%;
+margin: 70px 30% ;
+background-color: rgb(221, 221, 221);
+border: aqua solid 0.5px;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0px 0px 10px 0px  #000;
+margin-bottom: 30px;
+}
+
+.required{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 25px;
+
+}
+
+
+.h1appoint{
+    text-align: center;
+    position: relative;
+    top: 50px;
+
+}
+
+
+
+.name{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: #000 0.1px ;
+    font-size: 18px;
+}
+
+
+#ConfirmAppointment{
+    background-color: rgb(0, 190, 190);
+    color: #000;
+    border-radius: 10px;
+    border: black solid 0.2px;
+    width: 100%;
+}
+
+
+#ConfirmAppointment:hover{
+    background-color: gray;
+    color: #f7f7f7;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+
+footer {
+    background-color: #343434;
+    padding-top: 50px;
+    color: white;
+}
+
+footer ul li a{
+    color: white;
+}
+.container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center ;
+}
+
+.footer-content {
+    width: 33.3%;
+}
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer.content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+
+}
+
+.footer.content ul{
+    text-align: center;
+
+}
+.list {
+    padding: 0;
+}
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: rgb(24, 181, 225);
+    transition-duration: .5s;
+
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i {
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    color: rgb(24, 181, 225);
+
+}
+.social-icons i:hover{
+    color: rgb(24, 181, 225);
+}
+.bottom-bar{
+    background: rgb(24, 181, 225);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.contactus{
+    margin-top: 30px;
+    margin-left: 100px;
+}
